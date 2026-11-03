@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Avalie músicas, álbuns e artistas, monte listas e descubra o que a comunidade anda ouvindo.">
+  <meta name="theme-color" content="#0d1014">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%2314181c'/%3E%3Ccircle cx='8' cy='18' r='3' fill='%2300e054'/%3E%3Ccircle cx='18' cy='16' r='3' fill='%2300e054'/%3E%3Cpath d='M11 18V5l9-2v11' stroke='%2300e054' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <title>Sonora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style oficial.css">
+  <script src="app oficial.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#app">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="conteudo topo-interno">
+      <a href="#/" class="logo">
+        <svg class="logo-icone" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <circle cx="8" cy="18" r="3" fill="currentColor"/>
+          <circle cx="18" cy="16" r="3" fill="currentColor"/>
+          <path d="M11 18V5l9-2v11" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Sonora
+      </a>
+      <nav>
+        <a href="#/musicas">Músicas</a>
+        <a href="#/albuns">Álbuns</a>
+        <a href="#/artistas">Artistas</a>
+        <a href="#/listas">Listas</a>
+      </nav>
+      <div class="perfil">
+        <button id="perfil-botao" class="perfil-botao" type="button" aria-haspopup="true" aria-expanded="false"></button>
+        <div id="perfil-menu" class="perfil-menu" hidden></div>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="conteudo" tabindex="-1">
+    <div class="skeleton-grade" aria-hidden="true">
+      <div class="skeleton-linha skeleton-linha--titulo"></div>
+      <div class="skeleton-cards">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+    </div>
+    <p class="muted sr-only">Carregando…</p>
+  </main>
+
+  <footer class="conteudo rodape">
+    Protótipo acadêmico · Fundamentos de Engenharia de Software ·
+    <button id="restaurar" class="link">Restaurar dados iniciais</button>
+  </footer>
+
+  <div id="aviso" role="status" aria-live="polite"></div>
+</body>
+</html>
